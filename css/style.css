@@ -167,7 +167,7 @@ main {
     border: 1px solid #0b36a8;
     background-color: #0b36a8;
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 0;
     text-decoration: none;
     transition: all 0.2s;
@@ -386,7 +386,6 @@ footer {
 .details h2 {
     color: #24262A;
     font-size: 32px;
-    /* font-family: "Poppins"; */
     margin: 0 0 8px;
 }
 
@@ -451,8 +450,10 @@ footer {
 .go-top {
     border: none;
     padding: 8px 10px;
+    font-size: 1.3em;
+    margin-right: 10px;
     border-radius: 20px;
-    background-color: #0b36a8;
+    background-color: #0ba3a8;
 }
 
 .go-top a {
