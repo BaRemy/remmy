@@ -471,3 +471,24 @@ footer {
 .copyright {
     margin-top: 20px;
 }
+
+.cv-download {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.cv-download a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 1em;
+  background-color: #337ab7;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.cv-download a:hover {
+  background-color: #23527c;
+}
