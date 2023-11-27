@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 *::before, *::after {
     box-sizing: border-box;
@@ -307,7 +307,7 @@ footer {
 .services-ele1 h4 {
     color: #24262A;
     font-size: 24px;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     margin: 18px 0 15px;
 }
 
@@ -329,7 +329,7 @@ footer {
 .services-ele2 h4 {
     color: #24262A;
     font-size: 24px;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     margin: 18px 0 15px;
 }
 
@@ -351,14 +351,14 @@ footer {
 .services-ele3 h4 {
     color: #24262A;
     font-size: 24px;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     margin: 18px 0 15px;
 }
 
 .services-ele3 p {
     color: #4D5055;
     font-size: 16px;
-    font-family: "Poppins","Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 0 0 16px;
 }
 
@@ -368,8 +368,8 @@ footer {
     font-size: 16px;
     color: #4D5055;
     font-size: 16px;
-    font-family: "Open Sans", sans-serif;
-    background-color: #EEEEEE;
+    font-family: "Poppins", sans-serif;
+    background-color: #F5F5F5;
 }
 
 .details-content {
@@ -392,14 +392,14 @@ footer {
 .details p {
     color: #4D5055;
     font-size: 16px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 0 0 36px
 }
 
 .details h5 {
     color: #24262A;
     font-size: 20px;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     margin: 0 0 8px;
 }
 
@@ -411,8 +411,20 @@ footer {
 
 #projects {
     text-align: center;
-    padding-top: 1em;
-    background-color: #C4DFDF;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    background-color: #fff;
+}
+
+.projects-body {
+    display: flex;
+    justify-content: center;
+    gap: 2.5em;
+}
+
+#project1:hover {
+    opacity: 0.8;
+    transform: scale(1.5);
 }
 
 .project-container {
@@ -432,15 +444,17 @@ footer {
 }
 
 #project-img {
-    width: 16.5em;
-    height: 10.5em;
+    width: 19em;
+    height: 13em;
     border-radius: 30px;
 }
 
 #projects h2 {
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 1em;
     padding-bottom: 10px;
+    font-size: 2em;
+    color: #24262A;
 }
 
 .project-container {
