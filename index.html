@@ -23,7 +23,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#projects">My Work</a></li>
-                    <!-- <li><a href="#contact">Contact</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
 
@@ -40,7 +40,7 @@
                 <div class="more-info">
                     <button class="discovery-btn"><a href="#about">Discover</a></button>
                     <div class="email-me">
-                        <a href="mailto:bahatiremy05@gmail.com?subject = Feedback&body = Message"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Contact Me</a>
+                        <a href="#contact"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Contact Me</a>
                     </div>
                 </div>
             </div>
@@ -151,8 +151,23 @@
                 </div>
             </div>
         </section>
+
+        <section id="contact">
+            <div class="contact_container">
+                <form id="contactForm">
+                    <h2>Contact details</h2>
+                    <p>For any type of online project please don't hesitate to get in touch with me. 
+                        The fastest way is to send me your message using the following email <a href="mailto:bahatiremy05@gmail.com">bahatiremy05@gmail.com</a></p>
+                    <input type="text" id="name" placeholder="Enter Your Name" autocomplete="name">
+                    <input type="email" id="email" placeholder="Enter Your Email" required autocomplete="email">
+                    <input type="text" id="subject" placeholder="Enter Your Subject" required autocomplete="off">
+                    <textarea id="message" rows="4" placeholder="How Can I Help You?" required spellcheck="true"></textarea>
+                    <button type="submit" id="btn">Send</button>
+                </form>
+            </div>
+        </section>
     </main>
-    <footer id="contact">
+    <footer>
         <ul class="footer-links">
             <li title="Twitter"><a href="https://twitter.com/bahati_remmy/" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
             <li title="Linkedin"><a href="https://www.linkedin.com/in/bahati-remy/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
@@ -166,5 +181,49 @@
             </a>
         </button>
     </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        const btn = document.getElementById('btn');
+        const form = document.getElementById('contactForm');
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+    
+            // Check if all fields are filled
+            if (name && email && subject && message) {
+                const body = 'Name: ' + name + '<br/> Email: ' + email + '<br/> Subject: ' + subject + '<br/> Message: ' + message;
+    
+                Email.send({
+                    SecureToken: "e338c765-6605-4c7c-bab7-f585c18e85a5",
+                    To: 'bahatiremy05@gmail.com',
+                    From: "bahatiremy05@gmail.com",
+                    Subject: 'Personalized Contacts',
+                    Body: body
+                }).then(
+                    message => {
+                        Swal.fire({
+                            title: "Good job!",
+                            text: "Email sent successfully!",
+                            icon: "success"
+                            });
+                            form.reset();
+                        // alert("Email sent successfully!");
+                    }
+                );
+            } else {
+                Swal.fire({
+                    title: "Try again!",
+                    text: "Please fill in all fields before sending.",
+                    icon: "warning"
+                    });
+                // alert("Please fill in all fields before sending.");
+            }
+        });
+    </script>
+    
 </body>
 </html>
