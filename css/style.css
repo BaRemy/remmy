@@ -234,7 +234,7 @@ footer {
 .about-intro p {
     color: #4D5055;
     margin: 0 0 16px;
-    font: 18px "Open Sans", sans-serif;
+    font: 18px "Poppins", sans-serif;
 }
 
 .about-intro .time {
@@ -259,14 +259,14 @@ footer {
     text-align: center;
     color: #4D5055;
     font-size: 16px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     padding: 124px 0 84px;
 }
 
 .description {
     color: #4D5055;
     font-size: 16px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     padding: 0px 15px;
 }
 
@@ -280,7 +280,7 @@ footer {
 .p-heading {
     color: #4D5055;
     font-size: 16px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 0 187px 64px;    
 }
 
@@ -299,7 +299,7 @@ footer {
 .services-ele1 {
     color: #4D5055;
     font-size: 16px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     padding: 15px 15px 15px 15px;
     border: 1px solid #B9B4C7;
 }
@@ -314,14 +314,14 @@ footer {
 .services-ele1 p {
     color: #4D5055;
     font-size: 16px;
-    font-family: "Poppins","Open Sans", sans-serif;
+    font-family: "Poppins","Poppins", sans-serif;
     margin: 0 0 16px;
 }
 
 .services-ele2 {
     color: #4D5055;
     font-size: 16px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     padding: 15px 15px 15px 15px;
     border: 1px solid #B9B4C7;
 }
@@ -336,14 +336,14 @@ footer {
 .services-ele2 p {
     color: #4D5055;
     font-size: 16px;
-    font-family: "Poppins","Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 0 0 16px;
 }
 
 .services-ele3 {
     color: #4D5055;
     font-size: 16px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     padding: 15px 15px 15px 15px;
     border: 1px solid #B9B4C7;
 }
@@ -414,17 +414,19 @@ footer {
     padding-top: 2em;
     padding-bottom: 1em;
     background-color: #fff;
+    height: 100vh;
 }
 
 .projects-body {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 2.5em;
 }
 
 #project1:hover {
     opacity: 0.8;
-    transform: scale(1.5);
+    transform: scale(1.4);
 }
 
 .project-container {
@@ -444,8 +446,9 @@ footer {
 }
 
 #project-img {
-    width: 19em;
-    height: 13em;
+    width: 30em;
+    height: 20em;
+    margin-top: 1em;
     border-radius: 30px;
 }
 
@@ -505,4 +508,81 @@ footer {
 
 .cv-download a:hover {
   background-color: #23527c;
+}
+
+.contact_container {
+    width: 100%;
+    padding: 3em 0;
+    background-color: #F7F9FB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "poppins", sans-serif;
+}
+
+form {
+    background-color: #fff;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+form:hover {
+    transition: all 5s ease-in-out;
+    background-color: #9BBEC8;
+}
+
+form h2 {
+    color: #24262A;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+form p {
+    color: #4D5055;
+    font-size: 16px "poppins", sans-serif;
+    margin-bottom: 64px;
+}
+
+form a {
+    text-decoration: none;
+}
+
+form a:hover {
+    color: #4D5055;
+}
+
+form input, form textarea {
+    border: 0;
+    margin: 10px 0;
+    font-size: 16px;
+    padding: 20px;
+    outline: none;
+    resize: vertical;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 2px rgb(150, 191, 162);
+    background-color: #F5F5F5;
+}
+
+form button {
+    border: 0;
+    width: 150px;
+    outline: none;
+    color: #fff;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 20px auto;
+    border-radius: 30px;
+    background-color: #0b36a8;
+}
+
+form button:hover {
+    opacity: 0.82;
+    transition: 0.5s ease-in;
 }
