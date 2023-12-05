@@ -12,6 +12,10 @@
     color: #000;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     display: flex;
     min-height: 60vh;
