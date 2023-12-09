@@ -10,7 +10,6 @@ Hello, I'm Remmy Bahati, and this is my portfolio website. It's designed to show
 - [Usage](#usage)
 - [Tech Stack](#tech-stack)
 - [Contact](#contact)
-- [License](#license)
 
 ## About
 
